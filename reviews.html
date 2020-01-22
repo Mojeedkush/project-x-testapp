@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cycling Tours</title>
+    <link rel="stylesheet" href="cyclestyles.css">
+</head>
+<style>
+    main {
+        background-color:  #4681A4;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    fieldset {
+        border: 2px solid white;
+        padding: 5px;
+    }
+
+    legend {
+        color: white;
+        padding: 5px;
+    }
+    img {
+        padding-left: 5px;
+    }
+    
+    button {
+        background-color: #ffffe6;
+        padding: 5px;
+    }
+
+    input {
+        background-color: #ffffe6;
+    }
+</style>
+<body>
+    <header>
+        <div class="top-half">
+            <h1>Fall 2019 Reviews</h1>
+        </div>
+        <div class="second-half">
+            <span><a href="reviews.html">Reviews</a></span>
+            <span><a href="seminars.html">Seminars</a></span>
+        </div>
+    </header>
+    <main>
+        <form action="https://csunix.mohawkcollege.ca/tooltime/showit.pl" method="POST">
+            <input type="hidden" name="formname" id="formname" value="Kazeem Taiwo Korede Trip Review">
+            <fieldset>
+               <legend>About You (optional)</legend>
+               <p>I usually prefer trips this time of the year (select all that apply):</p>
+                <br>
+                <select name="pref" id="pref" multiple="multiple">
+                    <option value="Winter">Winter</option>
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Fall">Fall</option>
+                </select>
+                <br><br>
+               First Name: <input type="text" name="firstname" id="firstname" maxlength="20" size="20"><br>
+               Last Name: <input type="text" name="lastname" id="lastname" maxlength="20" size="20"><br>
+               Phone Number: <input type="text" name="phone" id="phone" maxlength="12" size="12" placeholder="123-456-7890"><br>
+               Email Address: <input type="text" name="emailaddress" id="emailaddress" maxlength="40" size="40" placeholder="text name@example.com">
+            </fieldset>
+
+            <fieldset>
+                <legend>Trip Reviews</legend>
+                <select name="trip" id="trip">
+                    <option value="AlbertaRural">Alberta Rural</option>
+                    <option value="BCCoast">B.C. Coast</option>
+                    <option value="OntarioLakeSuperior">Ontario Lake Superior</option>
+                    <option value="PEI">PEI</option>
+                    <option value="NovaScotiaCabotTrail" selected>Nova Scotia Cabot Trail</option>
+                </select>
+
+                <select name="duration" id="duration">
+                    <option value="5d" selected>5days</option>
+                    <option value="7d" >7days</option>
+                    <option value="10d">10days</option>
+                    <option value="14d" >days</option>
+                </select>
+                <br><br>
+                <p>Your Rating:</p>
+                <input type="radio" name="rating" value="4" id="rating"><img src="wheel_sm.jpg" alt=""><img src="wheel_sm.jpg" alt=""><img src="wheel_sm.jpg" alt=""><img src="wheel_sm.jpg" alt=""><br>
+
+                <input type="radio" name="rating" value="3" id="rating"><img src="wheel_sm.jpg" alt=""><img src="wheel_sm.jpg" alt=""><img src="wheel_sm.jpg" alt=""><br>
+
+                <input type="radio" name="rating" value="2" id="rating"><img src="wheel_sm.jpg" alt=""><img src="wheel_sm.jpg" alt=""><br>
+
+                <input type="radio" name="rating" value="1" id="rating"><img src="wheel_sm.jpg" alt="">
+                <p>Comments</p>
+                <textarea name="comments" id="comments" cols="65" rows="7"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    I would be interested in these trips: (check all that apply)
+                </legend>
+                <input type="checkbox" name="interested" id="interested" value="coast">Sea or Lake Coast <br>
+                <input type="checkbox" name="interested" id="interested" value="rural">Rural <br>
+                <input type="checkbox" name="interested" id="interested" value="mountains" checked>Mountains <br>
+                <input type="checkbox" name="interested" id="interested" value="other">Other (Please specify) <input type="text" name="otherdestination" id="otherdestination">
+            </fieldset>
+            <br>
+            <button type="submit" id="submit">SEND REVIEW</button>
+            <button type="reset">CANCEL</button>
+        </form>
+    </main>
+    
+    <footer class="container-fluid text-center">
+        <h4>&COPY; <a href="https://mojeedkush.github.io/my_portfolio/index.html">MOJEED KUSIMO</a></h4>        
+    </footer>
+</body>
+</html>

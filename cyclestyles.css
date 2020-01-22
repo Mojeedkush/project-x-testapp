@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.top-half {
+    background-color: rgb(233, 222, 222);
+    text-align: center;
+} 
+
+.second-half {
+    background-color: #4681A4;
+    color: white;
+    text-align: center;
+    height: 35px;
+}
+
+span a {
+    text-decoration: none;
+    color: white;
+}
+
+.second-half span {
+    background-color: rgb(233, 222, 222);
+    position: relative;
+    top: 12px;
+    padding: 5px;
+    border: 2px solid black;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    margin-right: 10px;
+}
+
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+caption.top {
+    text-align: left;
+}
+
+caption.bottom {
+    text-align: right;
+    border-bottom: 1px solid black;
+    position: relative;
+    top: 459px;
+}
+
+table.body {
+    width: 100%;
+}
+
+table.body tr:nth-child(1) {
+    background-color: #888888;
+}
+
+table.body, tr.body > th, tr.body > td  {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table.legend th {
+    padding-left: 3px;
+}
+
+table.legend th:nth-child(1) {
+    border-left: 10px solid lightskyblue;
+}
+
+table.legend th:nth-child(2) {
+    border-left: 10px solid #ADFF2F;
+}
+
+table.legend th:nth-child(3) {
+    border-left: 10px solid #BA55D3;
+}
+
+table.legend th:nth-child(4) {
+    border-left: 10px solid #FFB6C1;
+}
+
+.dust-colspan {
+    text-align: center;
+    background-image: url("dust.jpg"); 
+}
+
+tr.body {
+    position: relative;
+}
+
+.days-col {
+    background-color: #ddeeff;
+}
+
+.bicycle-repair {
+    background-color: rgb(165, 66, 165);
+}
+
+.beginner-cycling {
+    background-color: lightskyblue;
+}
+
+.trip-planning {
+    background-color: #FFB6C1;
+}
+
+.long-distance-cycling {
+    background-color: #ADFF2F;
+}
+
+.text-center {
+    text-align: center;
+}
